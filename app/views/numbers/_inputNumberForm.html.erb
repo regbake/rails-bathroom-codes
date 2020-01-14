@@ -1,0 +1,23 @@
+<%= form_with model: @number, local: true do |form| %>
+	<% if @number.errors.any? %>
+		<div id="error_explanation">
+			<h2>
+				<%= pluralize(@number.errors.count, "error") %> prohibited this number from being saved:
+			</h2>
+			<ul>
+				<%= @number.errors.each do |msg| %>
+					<li><%= msg %></li>
+				<% end %>
+			</ul>
+		</div>
+	<% end %>
+
+	<p>
+		<%= form.label :number %><br>
+		+1 <%= form.text_field :number %>
+	</p>
+
+	<p>
+		<%= form.submit %>
+	</p>
+<% end %>
