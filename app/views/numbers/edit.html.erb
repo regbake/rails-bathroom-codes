@@ -1,5 +1,31 @@
-<h1>Edit Number</h1>
+<section class="hero is-primary is-bold is-medium">
+	<div class="hero-body">
+		<div class="container">
+			<h1 class="title">
+				Edit Number
+			</h1>
 
-<%= render 'inputNumberForm' %>
+			<h2 class="subtitle">
+				Bathroom Codes for all
+			</h2>
+		</div>
+	</div>
+</section>
 
-<%= link_to 'Back', number_path %>
+<div class="tile is-ancestor">
+	<div class="tile is-6">
+		<div class="tile is-child box">
+			<%= render 'inputNumberForm' %>
+		</div>
+	</div>
+
+	<div class="tile is-6">
+		<div class="tile is-child box">
+			<p class="title"><%= link_to 'Back', number_path %></p>
+		</div>
+	</div>
+</div>
+
+
+
+

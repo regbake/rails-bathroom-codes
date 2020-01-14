@@ -6,8 +6,8 @@ namespace :custom do
 	task :send_sms_code => :environment do
 		all_number = Number.all
 
-		account_sid = 'SECRET'
-		auth_token = 'SECRET'
+		account_sid = 'SECRET_SID'
+		auth_token = 'SECRET_TOKEN'
 
 		client = Twilio::REST::Client.new(account_sid, auth_token)
 

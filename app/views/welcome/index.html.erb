@@ -1,7 +1,29 @@
-<h1>Welcome to Codex</h1>
-<h2>Bathroom Codes for all</h2>
+<section class="hero is-primary is-bold is-medium">
+	<div class="hero-body">
+		<div class="container">
+			<h1 class="title">
+				Welcome to Codex
+			</h1>
 
-<p>Today's Code is: <%= @code %></p>
+			<h2 class="subtitle">
+				Bathroom Codes for all
+			</h2>
+		</div>
+	</div>
+</section>
 
-<%= link_to 'Add your number', new_number_path %>
+<div class="tile is-ancestor">
+	<div class="tile is-6">
+		<div class="tile is-child box">
+			<p class="title">Today's Code is: <%= @code %></p>
+		</div>
+	</div>
+
+	<div class="tile is-6">
+		<div class="tile is-child box">
+			<p class="title"><%= link_to 'Add your number', new_number_path %></p>
+		</div>
+	</div>
+</div>
+
 
