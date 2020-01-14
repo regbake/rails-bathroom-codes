@@ -23,12 +23,10 @@ namespace :custom do
 			body: "Reggie's test SMS - the code is 1234"
 			)
 
-			=begin
-				NOTE: From Twilio - The number  is unverified. Trial accounts cannot send messages to unverified numbers; verify
-				at twilio.com/user/account/phone-numbers/verified, or purchase a Twilio number to send messages to unverified numbers
 
-				So this might not always work..
-			=end
+			#NOTE: From Twilio - The number  is unverified. Trial accounts cannot send messages to unverified numbers; verify
+			#at twilio.com/user/account/phone-numbers/verified, or purchase a Twilio number to send messages to unverified numbers
+			#So this might not always work..
 		end
 	end
 
