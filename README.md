@@ -2,9 +2,12 @@
 
 Visit https://bathroom-code-sms.herokuapp.com/ for live deployment
 
+* Features:
+	* Input phone number (duplicate and length) validation
+	* Bulma styling
+	* PostgreSQL prod db
 * "Today's code" is currently static
 	* next steps are to add a Code model
-	* Pull this Code from db to send in SMS
 * Uses Twilio SMS (free dev account) to send SMS info to User phone number
 	* Todo: add Twilio account info via secret key? Unclear proper security measures
 	* Twilio want you to pay to send bulk SMS (unregistered phone numbers error)
